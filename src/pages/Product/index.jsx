@@ -1,12 +1,46 @@
 import styles from './index.module.css'
 import Nav from '../../components/Nav'
+import useProducts from '../../hooks/useProducts'
 
-const Product = ({ params }) => {
-  const { title } = params
+const Product = () => {
+  const { activeProduct } = useProducts()
+  // const { discount, stock, price, title, imageUrl } = activeProduct
+
+  const mock = {
+    id: '2135daad-5c0f-47ba-9848-c5396ca7c2d6',
+    title: 'Set de luz simple',
+    price: (19.99 * 186).toFixed(2),
+    discount: 35,
+    imageUrl: 'car_door_open_light_alert_3.jpg',
+    stock: true,
+  }
+
+  const { discount, stock, price, title, imageUrl } = mock
+
   return (
     <div className={styles.container}>
       <Nav />
-      <h1>Product {title}</h1>
+      <aside className={styles.asideBar}>
+        <h1 className={styles.productTitle}>{title}</h1>
+        <p className={styles.productDescription}>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, debitis. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Vero, ea?
+        </p>
+        <div>
+          <span>Precio</span>
+          <span>{price}</span>
+          <div>
+            <span>Descuentos</span>
+            <span className={styles.discountCodeText}>
+              Código de descuento <span className={styles.discountCode}>VER2021</span> aplicado
+            </span>
+            <span className={styles.discountCodeText}>Descuento por lanzamiento {discount}%</span>
+          </div>
+
+          <p className={styles.warningText}>Precio sujeto a impuestos y regulaciones regionales.</p>
+        </div>
+        <button className={styles.button}>Comprar</button>
+      </aside>
     </div>
   )
 }

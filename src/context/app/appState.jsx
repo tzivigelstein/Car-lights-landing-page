@@ -1,13 +1,27 @@
 import { useReducer } from 'react'
-import AppContext from './appContext'
+import appContext from './appContext'
 import appReducer from './appReducer'
+import { SET_ACTIVE_PRODUCT } from './appTypes'
 
 const AppState = ({ children }) => {
-  const intialState = {}
+  const initialState = {
+    activeProduct: null,
+  }
 
-  const [state, dispatch] = useReducer(intialState, appReducer)
+  const [state, dispatch] = useReducer(appReducer, initialState)
 
-  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>
+  const setActiveProduct = id => {
+    dispatch({
+      type: SET_ACTIVE_PRODUCT,
+      payload: id,
+    })
+  }
+
+  return (
+    <appContext.Provider value={{ activeProduct: state.activeProduct, setActiveProduct }}>
+      {children}
+    </appContext.Provider>
+  )
 }
 
 export default AppState

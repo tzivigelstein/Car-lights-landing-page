@@ -1,3 +1,61 @@
 .container {
   padding: 4.5rem;
+  position: relative;
+}
+
+.asideBar {
+  position: fixed;
+  background-color: var(--transparent-dark);
+  top: 4.3rem;
+  right: 0;
+  width: 33%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.productTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.productDescription {
+  color: var(--light-white);
+}
+
+.discountCodeText {
+  font-size: 0.9rem;
+  color: var(--light-white);
+}
+
+.discountCode {
+  filter: brigthness(90%);
+  color: #09f;
+  transition: 0.2s ease-in-out text-decoration, 0.2s ease-in-out color;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (hover) {
+  .discountCode:hover {
+    text-decoration: underline;
+    filter: brigthness(100%);
+  }
+}
+
+.warningText {
+  color: var(--light-white);
+}
+
+.button {
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  background-color: #09f;
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
 }

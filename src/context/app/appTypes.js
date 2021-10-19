@@ -1,0 +1,1 @@
+export const SET_ACTIVE_PRODUCT = 'SET_ACTIVE_PRODUCT'
