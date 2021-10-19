@@ -1,4 +1,3 @@
-import React from 'react'
 import Nav from '../../components/Nav'
 import Heading from '../../components/Heading'
 import Products from '../../components/Products'

@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from '../Button'
 import { RightArrow } from '../Icons'
 import styles from './index.module.css'

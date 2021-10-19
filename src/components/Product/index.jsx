@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './index.module.css'
 import { Link } from 'wouter'
 import slugify from 'slugify'
