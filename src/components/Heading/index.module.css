@@ -1,0 +1,30 @@
+.section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #222;
+  padding: 4.5rem;
+}
+
+.infoContainer {
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+.backgroundImage {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  filter: brightness(60%);
+  z-index: 0;
+}

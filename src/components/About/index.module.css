@@ -1,0 +1,33 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #222;
+  padding: 4.5rem;
+}
+
+.staffImagesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: max-content;
+  gap: 1rem;
+}
+
+.staffSquare {
+  background-color: #444;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.staffSquareImage {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  filter: contrast(110%) saturate(110%);
+}

@@ -1,0 +1,19 @@
+.section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #222;
+  padding: 4.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.productList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1.8rem;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

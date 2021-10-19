@@ -1,0 +1,21 @@
+:root {
+  --white: rgba(255, 255, 255, 0.85);
+  --light-white: rgba(255, 255, 255, 0.5);
+  --text: rgba(0, 0, 0, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  box-sizing: inherit;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  scroll-behavior: smooth;
+}
