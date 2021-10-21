@@ -8,15 +8,26 @@
 
 .infoContainer {
   display: grid;
-  place-items: center;
+  place-items: center left;
   position: relative;
   z-index: 1;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .text {
   margin: 0;
   padding: 0;
   color: var(--white);
+  font-size: 2.8rem;
+  width: 65%;
+}
+
+.helperText {
+  margin: 0;
+  color: var(--light-white);
+  width: 65%;
+  font-size: 1.2rem;
 }
 
 .backgroundImage {

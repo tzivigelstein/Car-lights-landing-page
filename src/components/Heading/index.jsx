@@ -6,10 +6,11 @@ const Heading = () => {
   return (
     <section className={styles.section}>
       <div className={styles.infoContainer}>
-        <h1 className={styles.text}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, pariatur nostrum tenetur similique voluptatum
-          asperiores aliquid minus temporibus aliquam laudantium.
-        </h1>
+        <h1 className={styles.text}>Descubre el nuevo diseño que le dará mas seguridad a tu vida.</h1>
+        <p className={styles.helperText}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi accusantium quos ut saepe molestiae quidem
+          ullam corporis numquam veritatis.
+        </p>
         <Button text="Ver productos" icon={<RightArrow />} />
       </div>
       <img className={styles.backgroundImage} src="./assets/car_door_open_light_alert_3.jpg" alt="" />
