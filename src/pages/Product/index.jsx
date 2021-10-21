@@ -23,18 +23,22 @@ const Product = () => {
       <aside className={styles.asideBar}>
         <h1 className={styles.productTitle}>{title}</h1>
         <p className={styles.productDescription}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, debitis. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Vero, ea?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ullam impedit officiis illo vel vitae cum
+          eligendi, earum possimus rerum.
         </p>
         <div>
           <span>Precio</span>
           <span>{price}</span>
           <div>
             <span>Descuentos</span>
-            <span className={styles.discountCodeText}>
-              Código de descuento <span className={styles.discountCode}>VER2021</span> aplicado
-            </span>
-            <span className={styles.discountCodeText}>Descuento por lanzamiento {discount}%</span>
+            <div className={styles.discountContainer}>
+              <span className={styles.discountCodeText}>
+                Código de descuento <span className={styles.discountCode}>VER2021</span> aplicado 10%
+              </span>
+              <span className={styles.discountCodeText}>
+                Código de descuento <span className={styles.discountCode}>LANZAMIENTO</span> aplicado {discount}%
+              </span>
+            </div>
           </div>
 
           <p className={styles.warningText}>Precio sujeto a impuestos y regulaciones regionales.</p>

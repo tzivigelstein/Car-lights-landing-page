@@ -23,6 +23,10 @@
   color: var(--light-white);
 }
 
+.discountContainer {
+  display: grid;
+}
+
 .discountCodeText {
   font-size: 0.9rem;
   color: var(--light-white);
@@ -38,7 +42,6 @@
 
 @media (hover) {
   .discountCode:hover {
-    text-decoration: underline;
     filter: brigthness(100%);
   }
 }
