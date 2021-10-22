@@ -17,20 +17,24 @@ const Product = () => {
 
   const { discount, stock, price, title, imageUrl } = mock
 
+  const finalPrice = (price - price * 0.1 - (price * discount) / 100).toFixed(2)
+
   return (
     <div className={styles.container}>
       <Nav />
+      <img className={styles.productImage} src={`../../../assets/${imageUrl}`} alt={title} />
       <aside className={styles.asideBar}>
-        <h1 className={styles.productTitle}>{title}</h1>
+        <div className={styles.titleAndPrice}>
+          <h1 className={styles.productTitle}>{title}</h1>
+          <span className={styles.productPrice}>${price}</span>
+        </div>
         <p className={styles.productDescription}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ullam impedit officiis illo vel vitae cum
           eligendi, earum possimus rerum.
         </p>
         <div>
-          <span>Precio</span>
-          <span>{price}</span>
           <div>
-            <span>Descuentos</span>
+            <h4 className={styles.discountTitle}>Descuentos</h4>
             <div className={styles.discountContainer}>
               <span className={styles.discountCodeText}>
                 Código de descuento <span className={styles.discountCode}>VER2021</span> aplicado 10%
@@ -39,11 +43,11 @@ const Product = () => {
                 Código de descuento <span className={styles.discountCode}>LANZAMIENTO</span> aplicado {discount}%
               </span>
             </div>
+            <span style={{ color: 'green' }}>{finalPrice}</span>
           </div>
-
-          <p className={styles.warningText}>Precio sujeto a impuestos y regulaciones regionales.</p>
         </div>
         <button className={styles.button}>Comprar</button>
+        <p className={styles.warningText}>Precio sujeto a impuestos y regulaciones regionales*</p>
       </aside>
     </div>
   )

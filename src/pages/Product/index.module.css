@@ -1,16 +1,27 @@
 .container {
-  padding: 4.5rem;
   position: relative;
+  max-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000 70%, #444);
+  display: flex;
+  align-items: flex-start;
+}
+
+.productImage {
 }
 
 .asideBar {
-  position: fixed;
   background-color: var(--transparent-dark);
-  top: 4.3rem;
-  right: 0;
   width: 33%;
+  padding: 5.5rem 4rem 4rem 4rem;
+  flex: 1;
   height: 100vh;
-  padding: 1rem;
+}
+
+.titleAndPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .productTitle {
@@ -19,8 +30,21 @@
   color: var(--white);
 }
 
+.productPrice {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
 .productDescription {
   color: var(--light-white);
+}
+
+.discountTitle {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin: 1rem 0 0.3rem 0;
 }
 
 .discountContainer {
@@ -33,21 +57,9 @@
 }
 
 .discountCode {
-  filter: brigthness(90%);
   color: #09f;
-  transition: 0.2s ease-in-out text-decoration, 0.2s ease-in-out color;
   font-weight: bold;
   font-size: 1rem;
-}
-
-@media (hover) {
-  .discountCode:hover {
-    filter: brigthness(100%);
-  }
-}
-
-.warningText {
-  color: var(--light-white);
 }
 
 .button {
@@ -61,4 +73,10 @@
   color: var(--white);
   font-weight: bold;
   cursor: pointer;
+  margin: 2rem 0 0.2rem 0;
+}
+
+.warningText {
+  color: var(--light-white);
+  font-size: 0.9rem;
 }
