@@ -31,3 +31,25 @@
   height: 100%;
   filter: contrast(110%) saturate(110%);
 }
+
+.infoContainer {
+  width: 40%;
+  align-self: flex-start;
+}
+
+.aboutTitle {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.accentTitleBrand {
+  font-family: 'Arista';
+  font-size: 2rem;
+  color: var(--white);
+  margin: 0;
+}
+
+.aboutText {
+  color: var(--light-white);
+  font-size: 1.1rem;
+}
