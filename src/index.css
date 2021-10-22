@@ -1,6 +1,6 @@
 :root {
   --white: rgba(255, 255, 255, 0.85);
-  --light-white: rgba(255, 255, 255, 0.5);
+  --light-white: rgba(255, 255, 255, 0.6);
   --text: rgba(0, 0, 0, 0.8);
   --transparent-dark: rgba(0, 0, 0, 0.6);
 }
