@@ -8,6 +8,12 @@
   place-items: center;
 }
 
+.productsSectionTitle {
+  color: var(--white);
+  font-size: 1.6rem;
+  margin: 0.5rem;
+}
+
 .productList {
   padding: 0;
   margin: 0;
@@ -16,4 +22,10 @@
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.productsSectionHelper {
+  font-size: 1rem;
+  color: var(--light-white);
+  margin: 0.6rem;
 }
