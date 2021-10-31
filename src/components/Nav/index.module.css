@@ -31,12 +31,32 @@
 }
 
 .listItem {
-  color: var(--light-white);
-  font-weight: 400;
+  display: flex;
+}
+
+.navLink {
   padding: 1.5rem 1.5rem;
   width: 100%;
-  font-size: 1.1rem;
   white-space: nowrap;
   cursor: pointer;
   transition: 0.2s ease-in-out color;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navButton {
+  width: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.2s ease-in-out color;
+  padding: 1.5rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
 }
