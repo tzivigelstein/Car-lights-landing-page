@@ -9,7 +9,7 @@ const Product = ({ product }) => {
   const { setActiveProduct } = useProducts()
   const [location, setLocation] = useLocation()
 
-  const discountPrice = (price - price * (discount / 100)).toFixed(2)
+  const discountPrice = (price - price * ((discount + 10) / 100)).toFixed(2)
 
   const slug = slugify(title, { lower: true })
 
@@ -35,8 +35,10 @@ const Product = ({ product }) => {
           <div className={styles.productInfoContainer}>
             <span className={styles.productTitle}>{title}</span>
             <div className={styles.priceContainer}>
-              <span className={styles.price}>${price}</span>
-              <span className={styles.discountPrice}>${discountPrice}</span>
+              <span className={styles.price}>${price.toLocaleString([], { maximunSignificantDigits: 2 })}</span>
+              <span className={styles.discountPrice}>
+                ${discountPrice.toLocaleString([], { maximunSignificantDigits: 2 })}
+              </span>
             </div>
           </div>
         </div>
