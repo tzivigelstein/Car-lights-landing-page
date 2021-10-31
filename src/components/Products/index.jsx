@@ -2,10 +2,11 @@ import styles from './index.module.css'
 import products from '../../../database'
 
 import Product from '../Product'
+import { forwardRef } from 'react'
 
-const Products = () => {
+const Products = forwardRef((props, ref) => {
   return (
-    <section className={styles.section}>
+    <section ref={ref} className={styles.section}>
       <h3 className={styles.productsSectionTitle}>Linea de productos premium</h3>
       <ul className={styles.productList}>
         {products.map(product => (
@@ -17,6 +18,6 @@ const Products = () => {
       </p>
     </section>
   )
-}
+})
 
 export default Products

@@ -1,10 +1,11 @@
+import { forwardRef } from 'react'
 import Button from '../Button'
 import { RightArrow } from '../Icons'
 import styles from './index.module.css'
 
-const Heading = () => {
+const Heading = forwardRef((props, ref) => {
   return (
-    <section className={styles.section}>
+    <section ref={ref} className={styles.section}>
       <div className={styles.infoContainer}>
         <h1 className={styles.text}>Descubre el nuevo diseño que le dará mas seguridad a tu vida.</h1>
         <p className={styles.helperText}>
@@ -13,9 +14,9 @@ const Heading = () => {
         </p>
         <Button text="Ver productos" icon={<RightArrow />} />
       </div>
-      <img className={styles.backgroundImage} src="./assets/car_door_open_light_alert_3.jpg" alt="" />
+      <img className={styles.backgroundImage} src="./assets/home_heading_background.jpg" alt="" />
     </section>
   )
-}
+})
 
 export default Heading
