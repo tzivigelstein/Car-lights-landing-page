@@ -4,14 +4,19 @@ import Heading from '../../components/Heading'
 import Products from '../../components/Products'
 import About from '../../components/About'
 import LightSpot from '../../components/LightSpot'
+import { useRef } from 'react'
 
 const Home = () => {
+  const headingRef = useRef()
+  const productsRef = useRef()
+  const aboutRef = useRef()
+
   return (
     <div className={styles.homeContainer}>
-      <Nav />
-      <Heading />
-      <Products />
-      <About />
+      <Nav refs={[headingRef, productsRef, aboutRef]} />
+      <Heading ref={headingRef} />
+      <Products ref={productsRef} />
+      <About ref={aboutRef} />
       <LightSpot position={{ right: 0, top: '55%' }} />
       <LightSpot
         colors={{ primary: 'red' }}
