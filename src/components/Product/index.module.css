@@ -4,6 +4,7 @@
   background: transparent;
   padding: 0;
   margin: 0;
+  width: 250px;
 }
 
 .productContainer {
@@ -30,19 +31,19 @@
 
 .productImageContainer {
   position: relative;
-  width: 200px;
 }
 
 .productImage {
   width: 100%;
+  max-width: 250px;
   object-fit: cover;
   border-radius: 0.5rem;
 }
 
 .productImageOverlay {
   border-radius: 0.5rem;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 20%, transparent);
-  width: 200px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 20%, transparent);
+  width: 250px;
   aspect-ratio: 1 / 1;
   position: absolute;
   top: 0;
