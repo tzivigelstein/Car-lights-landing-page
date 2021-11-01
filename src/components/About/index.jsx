@@ -26,9 +26,10 @@ const About = forwardRef((props, ref) => {
             Un poco sobre <span className={styles.accentTitleBrand}>doorj</span>
           </h3>
           <p className={styles.aboutText}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quibusdam repellat culpa, quisquam ipsa nemo
-            nulla beatae blanditiis dicta est eius. Modi harum doloribus aliquid nostrum neque corrupti dolore ea. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Quae, velit.
+            Queremos resolver un gran problema de los automóviles. Todos quieren utilizar algún tipo de protección
+            vehicular, pero nadie sabe cuál es la mejor opción. Afortunadamente llegamos nosotros, doorj. Nosotros nos
+            aseguramos de asegurarlos con nuestro novedoso sistema de luces protectoras, para ayudar a la mayor
+            cantidad de personas posible.
           </p>
         </div>
       </div>
