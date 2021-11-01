@@ -14,7 +14,7 @@ const Heading = forwardRef((props, ref) => {
         </p>
         <Button text="Ver productos" icon={<RightArrow />} />
       </div>
-      <img className={styles.backgroundImage} src="./assets/home_heading_background.jpg" alt="" />
+      <img className={styles.backgroundImage} src="./assets/home_heading_background.jpg" alt="Car with lights on" />
     </section>
   )
 })
