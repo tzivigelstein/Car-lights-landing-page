@@ -28,6 +28,7 @@
   width: 60%;
   z-index: 1;
   border-radius: 0.5rem;
+  filter: brightness(130%);
 }
 
 .asideBar {

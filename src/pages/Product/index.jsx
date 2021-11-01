@@ -5,7 +5,7 @@ import LigthSpot from '../../components/LightSpot'
 
 const Product = () => {
   const { activeProduct } = useProducts()
-  const { discount, stock, price, title, imageUrl } = activeProduct
+  const { discount, stock, price, title, description, imageUrl } = activeProduct
 
   const finalPrice = (price - price * 0.1 - (price * discount) / 100).toLocaleString([], {
     maximunSignificantDigits: 2,
@@ -29,10 +29,7 @@ const Product = () => {
             })}
           </span>
         </div>
-        <p className={styles.productDescription}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ullam impedit officiis illo vel vitae cum
-          eligendi, earum possimus rerum.
-        </p>
+        <p className={styles.productDescription}>{description}</p>
         <div>
           <div>
             <h4 className={styles.discountTitle}>Descuentos</h4>
