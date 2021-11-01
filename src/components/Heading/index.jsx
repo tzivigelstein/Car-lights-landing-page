@@ -9,8 +9,8 @@ const Heading = forwardRef((props, ref) => {
       <div className={styles.infoContainer}>
         <h1 className={styles.text}>Descubre el nuevo diseño que le dará mas seguridad a tu vida.</h1>
         <p className={styles.helperText}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi accusantium quos ut saepe molestiae quidem
-          ullam corporis numquam veritatis.
+          Llegaron los descuentos de <span className={styles.glowingText}>VERANO</span> por un 10% en todas las compras
+          mas un descuento del 30% de bienvenida
         </p>
         <Button text="Ver productos" icon={<RightArrow />} />
       </div>
