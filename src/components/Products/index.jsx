@@ -13,9 +13,7 @@ const Products = forwardRef((props, ref) => {
           <Product key={product.id} product={product} />
         ))}
       </ul>
-      <p className={styles.productsSectionHelper}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, nulla.
-      </p>
+      <p className={styles.productsSectionHelper}>El precio se olvida, la calidad se recuerda. La mejor proteccion para tus seres queridos.</p>
     </section>
   )
 })
